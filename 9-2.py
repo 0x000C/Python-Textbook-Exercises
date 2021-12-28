@@ -8,5 +8,3 @@ def find_an_even(L):
         if not i & 1:
             return i
     raise ValueError
-
-print(find_an_even([1,2,3,4,5]))
