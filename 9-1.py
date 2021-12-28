@@ -7,7 +7,6 @@ def sum_digits(s):
     """Assumes s is a string
        Returns the sum of the decimal digits in s
           For example, if s is 'a2b3c' it returns 5"""
-    numbers = "0123456789"
     total = 0
     for i in range(len(s)):
         try:
