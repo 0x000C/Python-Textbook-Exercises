@@ -7,17 +7,11 @@ def sum_digits(s):
     """Assumes s is a string
        Returns the sum of the decimal digits in s
           For example, if s is 'a2b3c' it returns 5"""
-    try:
-        numbers = "0123456789"
-        total = 0
-        for i in range(len(s)):
-            if s[i] in numbers:
-                try:
-                    total += int(s[i])
-                except BaseException:
-                    print(
-                        'Error in sum_digits loop. Current character: ', s[i])
-        return total
-    except BaseException:
-        print('sum_digits encountered an error outside of the loop.')
-        return float('nan')
+    numbers = "0123456789"
+    total = 0
+    for i in range(len(s)):
+        try:
+            total += int(s[i])
+        except BaseException:
+            pass
+    return total
