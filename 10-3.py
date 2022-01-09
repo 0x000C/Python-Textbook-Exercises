@@ -16,11 +16,7 @@ class Politician(Person):
     def might_agree(self, other):
         """returns True if self and other belong to the same part
              or at least one of then does not belong to a party"""
-        if self.get_party() is None:
+        if self.get_party() is None or other.get_Party() is None:
             return True
-        elif other.get_party() is None:
-            return True
-        elif self.get_party() == other.get_party():
-            return True
-        else:
-            return False
+        else
+            return self.get_party() == other.get_party()
