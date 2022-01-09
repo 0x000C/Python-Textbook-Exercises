@@ -18,5 +18,5 @@ class Politician(Person):
              or at least one of then does not belong to a party"""
         if self.get_party() is None or other.get_Party() is None:
             return True
-        else
+        else:
             return self.get_party() == other.get_party()
